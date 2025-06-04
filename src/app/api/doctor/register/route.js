@@ -22,6 +22,7 @@ export async function POST(req) {
     await dbConnect();
 
     const body = await req.json();
+    console.log(body);
     const {
       firstName,
       lastName,
@@ -30,6 +31,7 @@ export async function POST(req) {
       gender,
       email,
       password,
+      consultantFee,
       phone,
       specialty,
       supSpeciality,
@@ -65,6 +67,7 @@ export async function POST(req) {
       gender,
       email,
       password: hashedPassword,
+      consultantFee,
       phone,
       specialty,
       supSpeciality,

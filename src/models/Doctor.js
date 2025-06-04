@@ -12,6 +12,7 @@ const doctorSchema = new mongoose.Schema({
   specialty: { type: String, required: true },
   supSpeciality: { type: String, },
   experience: { type: Number, required: true },
+  consultantFee:{type:Number},
   qualifications: [String],
   licenseNumber: { type: String, required: true, unique: true },
   hospital: { type: String, required: true },
