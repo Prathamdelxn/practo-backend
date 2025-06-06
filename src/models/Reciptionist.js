@@ -8,7 +8,7 @@ const staffSchema = new mongoose.Schema({
   status:{type:String},
   doctorId:{type:String},
   password: { type: String, required: true },
- 
+ role:{type:String,default:"Receptionist"}
 }, { timestamps: true });
 
 export default mongoose.models.Staff || mongoose.model("Staff", staffSchema);
