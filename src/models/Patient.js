@@ -51,6 +51,13 @@ const patientSchema = new mongoose.Schema(
       type: String,
     
     },
+    bloodType:{
+        type:String
+    },
+    password:{
+        type:String
+    },
+      role:{type:String,default:"patient"},
   },
   {
     timestamps: true, // Adds createdAt and updatedAt fields
