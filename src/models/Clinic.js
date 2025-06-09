@@ -11,9 +11,11 @@ const clinicSchema = new mongoose.Schema({
   website: {type: String,},
   email: { type: String,},
   phone: {type: String,},
+  password:{type:String},
   address: { type: String, },
   city: { type: String,},
   state: {type: String,},
+  role:{type:String ,default:"clinic"},
   postalCode: {type: String,},
   country: {type: String,},
   openingHours: {

@@ -35,6 +35,7 @@ export async function POST(req) {
       email,
       phone,
       address,
+      password,
       city,
       state,
       postalCode,
@@ -55,6 +56,7 @@ export async function POST(req) {
       clinicType,
       description,
       registrationNumber,
+      password,
       taxId,
       specialties,
       logo,
@@ -65,6 +67,7 @@ export async function POST(req) {
       city,
       state,
       postalCode,
+      role:"clinic",
       country,
       openingHours: cleanedOpeningHours,
     });
