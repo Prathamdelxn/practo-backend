@@ -14,10 +14,11 @@ const doctorSchema = new mongoose.Schema({
   experience: { type: Number, required: true },
   consultantFee:{type:Number},
   qualifications: [String],
-  licenseNumber: { type: String, required: true, unique: true },
+  licenseNumber: { type: String, },
   hospital: { type: String, required: true },
   hospitalAddress: { type: String,  },
-  hospitalNumber:{ type: String, required: true },
+  clinicId:{type:String},
+  hospitalNumber:{ type: String, },
   isVerified: { type: Boolean, default: false },
   role:{type:String,default:"doctor"},
   available:{
