@@ -30,6 +30,7 @@ export async function POST(req) {
       profileImage,
       gender,
       email,
+      homeAddress,
       password,
       consultantFee,
       phone,
@@ -68,7 +69,7 @@ export async function POST(req) {
       profileImage,
       gender,
       email,
-     
+     homeAddress,
       consultantFee,
       phone,
       specialty,

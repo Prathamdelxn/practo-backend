@@ -6,6 +6,7 @@ const staffSchema = new mongoose.Schema({
   email: { type: String},
   phone:{type:String},
   status:{type:String},
+  clinicId:{type:String},
   doctorId:{type:String},
   password: { type: String, required: true },
  role:{type:String,default:"Receptionist"}

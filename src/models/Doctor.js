@@ -8,6 +8,7 @@ const doctorSchema = new mongoose.Schema({
   gender: { type: String, required: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
+  homeAddress:{type:String},
   phone: { type: String, required: true },
   specialty: { type: String, required: true },
   supSpeciality: { type: String, },
