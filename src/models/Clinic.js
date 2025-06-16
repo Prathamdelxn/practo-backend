@@ -12,6 +12,7 @@ const clinicSchema = new mongoose.Schema({
   email: { type: String,},
   phone: {type: String,},
   password:{type:String},
+  images:[{type:String}],
   address: { type: String, },
   city: { type: String,},
   state: {type: String,},
