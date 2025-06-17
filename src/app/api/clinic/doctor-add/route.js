@@ -59,7 +59,7 @@ export async function POST(req) {
     }
 
     // Hash password
-    // const hashedPassword = await bcrypt.hash(password, 12);
+     const hashedPassword = await bcrypt.hash(password, 12);
 
     // Create doctor
     const newDoctor = await Doctor.create({
@@ -78,7 +78,7 @@ export async function POST(req) {
       qualifications,
       licenseNumber,
       hospital,
-      password,
+      password:hashedPassword,
       clinicId,
       hospitalAddress,
       hospitalNumber,
