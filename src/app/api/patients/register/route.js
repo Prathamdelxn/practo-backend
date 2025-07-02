@@ -26,7 +26,7 @@ console.log(body);
     const {
       firstName,
       lastName,
-      dateOfBirth,
+      dob,
       gender,
       phone,
       email,
@@ -40,7 +40,7 @@ console.log(body);
     const newPatient = await Patient.create({
       firstName,
       lastName,
-      dateOfBirth,
+      dateOfBirth:dob,
       gender,
       phone,
       email,

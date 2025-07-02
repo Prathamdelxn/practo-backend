@@ -11,7 +11,7 @@ const patientSchema = new mongoose.Schema(
       
     },
     dateOfBirth: {
-      type: Date,
+      type: String,
       
     },
     gender: {
@@ -63,5 +63,5 @@ const patientSchema = new mongoose.Schema(
     timestamps: true, // Adds createdAt and updatedAt fields
   }
 );
-
+delete mongoose.models.Patient
 export default mongoose.models.Patient || mongoose.model("Patient", patientSchema);
