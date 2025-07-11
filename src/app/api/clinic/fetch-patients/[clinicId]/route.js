@@ -63,7 +63,7 @@ const setCorsHeaders = (res) => {
 export async function GET(req, { params }) {
   try {
     await dbConnect();
-    const { clinicId } = await params;
+    const { clinicId } = params;
 
     if (!clinicId) {
       const res = NextResponse.json({ success: false, message: "clinicId is required" }, { status: 400 });
@@ -116,7 +116,7 @@ export async function GET(req, { params }) {
   }
 }
 
-export function OPTIONS() {
+export async function OPTIONS() {
   const res = new NextResponse(null, { status: 204 });
   return setCorsHeaders(res);
 }
