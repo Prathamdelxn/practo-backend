@@ -46,7 +46,7 @@ export async function PUT(req, { params }) {
   try {
     const { id } = params;
     const { status, approved, rejectionReason } = await req.json();
-
+console.log("sdf",rejectionReason);
     if (!id || !status) {
       return NextResponse.json(
         { message: 'ID and Status are required' },
@@ -63,7 +63,7 @@ export async function PUT(req, { params }) {
     if (rejectionReason) {
       updateData.rejectionReason = rejectionReason;
     }
-
+console.log("asdf",updateData);
     const clinic = await Clinic.findByIdAndUpdate(id, updateData, { new: true });
 
     if (!clinic) {

@@ -58,7 +58,7 @@ const clinicSchema = new mongoose.Schema({
 licenseDocument: { type: Object },
 gstDocument: { type: Object }, // URL or filename
   licenseDocumentUrl: { type: String },
-
+rejectionReason:{type:String},
   gstDocumentUrl: { type: String },
 
   is24x7: { type: Boolean, default: false },
