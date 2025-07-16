@@ -129,6 +129,7 @@ export async function POST(req) {
           name: user.clinicName,
           email: user.email,
           logo: user.logo,
+          status:user.status,
           role: user.role,
         },
       }),
