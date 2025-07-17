@@ -16,6 +16,7 @@ const doctorSchema = new mongoose.Schema({
   consultantFee:{type:Number},
   qualifications: [String],
   licenseNumber: { type: String, },
+  sessionTime:{type:String},
   hospital: { type: String, required: true },
   hospitalAddress: { type: String,  },
   clinicId:{type:String},
@@ -27,5 +28,5 @@ const doctorSchema = new mongoose.Schema({
     time:{ type: String,},
   }
 }, { timestamps: true });
-
+delete mongoose.models.Doctor;
 export default mongoose.models.Doctor || mongoose.model("Doctor", doctorSchema);

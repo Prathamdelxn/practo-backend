@@ -41,6 +41,7 @@ export async function POST(req) {
       hospital,
       hospitalAddress,
       hospitalNumber,
+      sessionTime,
       available
     } = body;
 
@@ -68,6 +69,7 @@ export async function POST(req) {
       email,
       password: hashedPassword,
       consultantFee,
+      sessionTime,
       phone,
       specialty,
       supSpeciality,
