@@ -35,13 +35,17 @@ export async function POST(req) {
       phone,
       specialty,
       supSpeciality,
+      sessionTime,
+      degreeCertificate,
+      identityProof,
+      status,
       experience,
       qualifications,
       licenseNumber,
       hospital,
       hospitalAddress,
       hospitalNumber,
-      sessionTime,
+   
       available
     } = body;
 
@@ -79,7 +83,11 @@ export async function POST(req) {
       hospital,
       hospitalAddress,
       hospitalNumber,
-      available
+      available,
+      sessionTime,
+      degreeCertificate,
+      identityProof,
+      status,
     });
 
     return setCorsHeaders(

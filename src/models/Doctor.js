@@ -12,6 +12,8 @@ const doctorSchema = new mongoose.Schema({
   phone: { type: String, required: true },
   specialty: { type: String, required: true },
   supSpeciality: { type: String, },
+   identityProof: { type: String, },
+      degreeCertificate: { type: String, },
   experience: { type: Number, required: true },
   consultantFee:{type:Number},
   qualifications: [String],
@@ -22,6 +24,7 @@ const doctorSchema = new mongoose.Schema({
   clinicId:{type:String},
   hospitalNumber:{ type: String, },
   isVerified: { type: Boolean, default: false },
+  status:{type:String},
   role:{type:String,default:"doctor"},
   available:{
     days:[{ type: String,}],
